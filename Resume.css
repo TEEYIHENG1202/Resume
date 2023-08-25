@@ -1,0 +1,178 @@
+*
+{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: pink;
+    min-height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container
+{
+    width:90%;
+    max-width:1000px;
+    min-height:800px;
+    border:3px solid black;
+    display: flex;
+    margin:50px;
+}
+
+.left_side
+{
+    width:40%;
+    padding:30px;
+    background-color:aqua;
+}
+
+.info
+{
+    height:auto;
+    width:100%;
+    overflow:hidden;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info img
+{
+    height:200px;
+    width:200px;
+    background-color:white;
+    border-radius: 100%;
+    border:3px solid black;
+}
+
+.mainText
+{
+    padding:5px 0px;
+}
+
+.subText
+{
+    display:inline-block;
+    padding:5px 0px;
+    font-weight:bold;
+}
+
+.contact ul
+{
+    list-style: none;
+}
+
+.contact ul li
+{
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.percent
+{
+    height:10px;
+    background-color: black;
+}
+
+.percent div
+{
+    height:10px;
+    background-color: blue;
+}
+
+.right_side
+{
+    width:60%;
+    padding:30px;
+    background-color:white;
+}
+
+.profile p
+{
+    text-align: justify;
+}
+
+.experience .companyName
+{
+    float:left;
+}
+
+.experience .duration
+{
+    float:right;
+}
+
+.experience ul
+{
+    clear:both;
+    list-style-type: circle;
+    line-height: 25px;
+    padding-left:20px;
+    text-align: justify;
+}
+
+.interestList
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.interestList span
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icon
+{
+    height:35px;
+    width:35px;
+    border-radius: 100%;
+    border:2px solid black;
+    margin:5px;
+    padding:1px;
+}
+
+hr
+{
+    margin:20px 0px;
+}
+
+@media (max-width:950px)
+{
+    .container
+    {
+        flex-direction: column;
+    }
+    
+
+    .left_side
+    {
+        width:100%;
+        padding:30px;
+        background-color:aqua;
+    }
+
+    .right_side
+    {
+        width:100%;
+        padding:30px;
+        background-color:white;
+    }
+
+
+    .interestList
+    {
+        flex-direction: column;
+        align-items: start;
+    }
+}
